@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - trang chủ</title>
+</head>
+<body>
+    <!--  
+        ghi chú giống kiểu # trong python
+        cú pháp thẻ HTML 
+        <tên_thẻ thuộc_tính> nội dung </tên_thẻ>
+        <tên_thẻ thuộc_tính />  thẻ mở
+        </tên_thẻ> thẻ đóng
+    -->
+    <h1>Heading1</h1>
+    <h2>Heading2</h2>
+    <h3>Heading3</h3>
+    <h4>Heading4</h4>
+    <h5>Heading5</h5>
+    <h6>Heading6</h6>
+
+    <!-- thẻ p -->
+    <p>paragraph - đoạn văn bản</p>
+
+    <!--  định dạng văn bản -->
+    <b>bold - chữ đậm</b><br>
+    <i>italic - in nghiêng</i><br>
+    <u>underline: chữ gạch chân</u><br>
+    <s>strickethrough - gạch ngang chữ</s>
+    <big>big - lớn hơn đoạn văn bản bình thường</big>
+    <small>small - nhỏ hơn đoạn văn bản bình thường</small>
+
+    <!-- toán học -->
+    <p>H<sub>2</sub>0 - nước</p>
+    <p>Pi * R<sup>2</sup> - diện tích hình tròn</p>
+    <p>&copy; copyright</p>
+    <p>&euro; - ký hiệu tiền tệ euro</p>
+
+    <!-- window + . (emoji) -->
+    <p>😍</p>
+    <p>(❁´◡`❁)</p>
+    <span>Đoạn văn bản-Inline Element</span>
+    <span>Inline Element</span>
+    <font color="red">CNTT20-03</font>
+
+    <!-- tạo 2 hộp 1 hộp 30% bên trái 1 hộp 70% bên phải, align center 2 cái để nhìn rõ hơn, dòng thứ 2 align right để hộp 70 qua bên phải -->
+    <!--  alt + z để xem hết trong 1 trang -->
+    <div style="display: flex;">
+        <div style="width: 30%; text-align: center;">khối 1<br>Text</div>
+        <div style="width: 70%; text-align: center;" align="right">khối 2<br>Text</div>
+    </div>
+    <!-- làm phần head tốt thì search engine tìm kiếm dễ hơn -->
+    <h1>Danh sách không sắp sếp: </h1> <!-- unordered list -->
+    <ul> <!-- thay đổi được icon -->
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+    <h1>Danh sách có sắp sếp: </h1> <!-- ordered list -->
+    <ol> <!-- thay đổi được icon -->
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ol>
+    <!-- Định dạng ảnh có .webp là định dạng ảnh mới, cho chất lượng tốt hơn , nhẹ hơn -->
+    <!-- width thể hiện chiều rộng của ảnh , height thể hiện chiều cao của ảnh ; px là đơn vị đo ảnh , alt là văn bản thay thế khi ảnh không tải được , không nên để chiều dài và chiều rộng cùng lúc -->
+        <h1>Nhúng ảnh</h1>
+        <img src="./assets/img/logo-dnu.webp" alt="Logo DNU" width="200px">
+
+    <!-- Định dạng âm thanh, data là đường dẫn đến tệp âm thanh , type là loại tệp âm thanh object-->
+        <h1>Nhúng âm thanh</h1>
+        <object data="./assets/audio/music.mp3" type="audio/mpeg" width="200px"></object>
+
+    <!-- Định dạng video, src là đường dẫn đến tệp video , width là chiều rộng của video , controls cho phép người dùng điều khiển video -->
+        <h1>Nhúng video</h1>
+        <video src="./assets/video/video.mp4" width="200px" controls></video>
+</body>
+</html>
